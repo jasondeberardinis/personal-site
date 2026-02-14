@@ -7,11 +7,18 @@ import { PixelWaves } from '@/components/PixelWaves'
 
 const currentProjects = [
   {
+    name: 'Spoil',
+    description: 'Simple products, built right',
+    url: 'https://spoil.co',
+    display: 'spoil.co',
+    logo: 'https://www.google.com/s2/favicons?domain=spoil.co&sz=32',
+  },
+  {
     name: 'GRRO',
     description: 'A bespoke marketing agency',
     url: 'https://grro.io',
     display: 'grro.io',
-    logo: 'https://www.google.com/s2/favicons?domain=grro.io&sz=32',
+    emoji: '🚀',
   },
   {
     name: 'Sheath',
@@ -19,13 +26,6 @@ const currentProjects = [
     url: 'https://sheath.store',
     display: 'sheath.store',
     logo: 'https://www.google.com/s2/favicons?domain=sheath.store&sz=32',
-  },
-  {
-    name: 'Spoil',
-    description: 'Simple products, built right',
-    url: 'https://spoil.co',
-    display: 'spoil.co',
-    logo: 'https://www.google.com/s2/favicons?domain=spoil.co&sz=32',
   },
 ]
 
@@ -107,14 +107,18 @@ export default function HomePage() {
                 className="block rounded-lg bg-card-bg p-4 transition-transform duration-200 hover:scale-[1.02]"
               >
                 <div className="flex items-center gap-2.5">
-                  <Image
-                    src={p.logo}
-                    alt={`${p.name} logo`}
-                    width={20}
-                    height={20}
-                    className="rounded-sm"
-                    unoptimized
-                  />
+                  {'emoji' in p ? (
+                    <span className="text-[20px] leading-none">{p.emoji}</span>
+                  ) : (
+                    <Image
+                      src={p.logo}
+                      alt={`${p.name} logo`}
+                      width={20}
+                      height={20}
+                      className="rounded-sm"
+                      unoptimized
+                    />
+                  )}
                   <span className="font-medium text-foreground">{p.name}</span>
                   <span className="text-muted">&mdash;</span>
                   <span className="text-sm text-muted">{p.description}</span>
