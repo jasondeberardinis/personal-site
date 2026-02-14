@@ -90,7 +90,7 @@ export default function HomePage() {
               >
                 <div className="flex items-center gap-2.5">
                   {'emoji' in p ? (
-                    <span className="text-[20px] leading-none">{p.emoji}</span>
+                    <span className="text-[16px] leading-none">{p.emoji}</span>
                   ) : (
                     <Image
                       src={p.logo}
