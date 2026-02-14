@@ -7,6 +7,13 @@ import { PixelWaves } from '@/components/PixelWaves'
 
 const currentProjects = [
   {
+    name: 'GRRO',
+    description: 'A bespoke marketing agency',
+    url: 'https://grro.io',
+    display: 'grro.io',
+    logo: 'https://www.google.com/s2/favicons?domain=grro.io&sz=32',
+  },
+  {
     name: 'Sheath',
     description: 'Premium knife rolls for chefs',
     url: 'https://sheath.store',
