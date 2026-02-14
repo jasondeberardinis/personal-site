@@ -71,7 +71,7 @@ export default function HomePage() {
           >
             Riviera Partners
           </a>{' '}
-          while building a portfolio.
+          while building my portfolio.
         </p>
 
         {/* Currently Building */}
