@@ -14,7 +14,7 @@ const currentProjects = [
     logo: 'https://www.google.com/s2/favicons?domain=spoil.co&sz=32',
   },
   {
-    name: 'GRRO',
+    name: 'Grro',
     description: 'A bespoke marketing agency',
     url: 'https://grro.io',
     display: 'grro.io',
