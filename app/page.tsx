@@ -18,7 +18,7 @@ const currentProjects = [
     description: 'Get recommended by AI search',
     url: 'https://grro.io',
     display: 'grro.io',
-    logo: 'https://www.google.com/s2/favicons?domain=grro.io&sz=32',
+    logo: '/grro-logo.png',
   },
   {
     name: 'Sheath',
@@ -89,18 +89,14 @@ export default function HomePage() {
                 className="block rounded-lg bg-card-bg p-4 transition-transform duration-200 hover:scale-[1.02]"
               >
                 <div className="flex items-center gap-2.5">
-                  {'emoji' in p ? (
-                    <span className="text-[16px] leading-none">{p.emoji}</span>
-                  ) : (
-                    <Image
-                      src={p.logo}
-                      alt={`${p.name} logo`}
-                      width={20}
-                      height={20}
-                      className="rounded-sm"
-                      unoptimized
-                    />
-                  )}
+                  <Image
+                    src={p.logo}
+                    alt={`${p.name} logo`}
+                    width={20}
+                    height={20}
+                    className="rounded-sm"
+                    unoptimized
+                  />
                   <span className="font-medium text-foreground">{p.name}</span>
                   <span className="text-muted">&mdash;</span>
                   <span className="text-sm text-muted">{p.description}</span>
