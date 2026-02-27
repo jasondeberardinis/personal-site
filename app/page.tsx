@@ -15,10 +15,10 @@ const currentProjects = [
   },
   {
     name: 'Grro',
-    description: 'A bespoke marketing agency',
+    description: 'Get recommended by AI search',
     url: 'https://grro.io',
     display: 'grro.io',
-    emoji: '🚀',
+    logo: 'https://www.google.com/s2/favicons?domain=grro.io&sz=32',
   },
   {
     name: 'Sheath',
