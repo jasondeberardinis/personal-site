@@ -8,7 +8,7 @@ import { PixelWaves } from '@/components/PixelWaves'
 const currentProjects = [
   {
     name: 'Grro',
-    description: 'Get recommended by AI search',
+    description: 'Get recommended by AI',
     url: 'https://grro.io',
     display: 'grro.io',
     logo: '/grro-logo.svg',
