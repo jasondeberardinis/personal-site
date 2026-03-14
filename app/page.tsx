@@ -7,14 +7,14 @@ import { PixelWaves } from '@/components/PixelWaves'
 
 const currentProjects = [
   {
-    name: 'Grro',
+    name: 'GRRO',
     description: 'Get recommended by AI',
     url: 'https://grro.io',
     display: 'grro.io',
     logo: '/grro-logo.svg',
   },
 {
-    name: 'Sheath',
+    name: 'SHEATH',
     description: 'Premium knife rolls for chefs',
     url: 'https://sheath.store',
     display: 'sheath.store',
