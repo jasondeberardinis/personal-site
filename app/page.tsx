@@ -11,16 +11,9 @@ const currentProjects = [
     description: 'Get recommended by AI search',
     url: 'https://grro.io',
     display: 'grro.io',
-    logo: '/grro-logo.png',
+    logo: '/grro-logo.svg',
   },
-  {
-    name: 'Spoil',
-    description: 'Simple products, built right',
-    url: 'https://spoil.co',
-    display: 'spoil.co',
-    logo: 'https://www.google.com/s2/favicons?domain=spoil.co&sz=32',
-  },
-  {
+{
     name: 'Sheath',
     description: 'Premium knife rolls for chefs',
     url: 'https://sheath.store',
