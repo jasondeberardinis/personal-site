@@ -1,22 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  weight: ["700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Jason DeBerardinis",
-  description: "Growing tech companies & building products.",
+  title: "AI Edge — Jason DeBerardinis",
+  description: "Weekly AI news, free tools, and real lessons from building companies.",
 };
 
 export default function RootLayout({
@@ -27,6 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+          rel="stylesheet"
+        />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-STPQ30C230" />
         <script
           dangerouslySetInnerHTML={{
@@ -39,9 +37,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${inter.variable} ${playfair.variable} antialiased`}
-      >
+      <body className={`${dmSans.variable} antialiased`}>
         {children}
       </body>
     </html>

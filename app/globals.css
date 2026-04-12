@@ -3,21 +3,27 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #FAFAF8;
-  --foreground: #1C1917;
-  --muted: #78716C;
-  --accent: #64748B;
-  --border: #E7E5E4;
-  --card-bg: #FFFFFF;
+  --background: #f5f2eb;
+  --foreground: #1a1a1a;
+  --muted: #8a8272;
+  --accent: #d4a853;
+  --accent-hover: #c49a45;
+  --border: #e2ddd3;
+  --card-bg: #ffffff;
+  --card-hover: #faf8f4;
+  --subtle: #f0ece4;
 }
 
 .dark {
-  --background: #1C1917;
-  --foreground: #FAFAF8;
-  --muted: #A8A29E;
-  --accent: #94A3B8;
-  --border: #44403C;
-  --card-bg: #292524;
+  --background: #111111;
+  --foreground: #f5f2eb;
+  --muted: #8a8272;
+  --accent: #d4a853;
+  --accent-hover: #e0b563;
+  --border: #2a2723;
+  --card-bg: #1a1917;
+  --card-hover: #222120;
+  --subtle: #1e1d1b;
 }
 
 @theme inline {
@@ -25,15 +31,50 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
   --color-border: var(--border);
   --color-card-bg: var(--card-bg);
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-playfair);
+  --color-card-hover: var(--card-hover);
+  --color-subtle: var(--subtle);
+  --font-sans: var(--font-dm-sans);
+  --font-display: 'Instrument Serif', serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* Selection color */
+::selection {
+  background: var(--accent);
+  color: var(--background);
 }
