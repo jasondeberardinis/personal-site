@@ -40,6 +40,10 @@
   --font-display: 'Instrument Serif', serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

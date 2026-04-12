@@ -33,7 +33,7 @@ export default function HomePage() {
       {/* ── Hero Section ── */}
       <section className="relative flex flex-col items-center justify-center px-6 pt-24 pb-20">
         {/* Subtle radial glow behind hero */}
-        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[600px] w-[800px] rounded-full bg-accent/[0.04] blur-[120px]" />
+        <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-full max-w-[600px] rounded-full bg-accent/[0.04] blur-[120px]" />
 
         <div className="relative w-full max-w-xl space-y-10 text-center">
           {/* Globe + Identity */}
@@ -58,8 +58,8 @@ export default function HomePage() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="space-y-4"
           >
-            <h1 className="font-display text-5xl sm:text-6xl text-foreground tracking-tight">
-              AI Edge
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground tracking-tight">
+              AI Edge Newsletter
             </h1>
             <p className="text-lg text-muted max-w-md mx-auto leading-relaxed">
               Weekly AI news, free tools, and real lessons from building companies.
