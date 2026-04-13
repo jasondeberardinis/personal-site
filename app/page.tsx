@@ -134,6 +134,21 @@ export default function HomePage() {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
         >
+          <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-4">
+            About
+          </p>
+          <p className="text-[15px] text-muted leading-relaxed mb-10">
+            I fell in love with building products at a young age. Now I grow tech companies at{' '}
+            <a
+              href="https://www.rivierapartners.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline decoration-accent/30 underline-offset-2 transition-colors hover:decoration-accent"
+            >
+              Riviera Partners
+            </a>{' '}
+            while building my own.
+          </p>
           <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-8">
             Currently Building
           </p>
