@@ -106,53 +106,6 @@ export default function HomePage() {
         <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       </div>
 
-      {/* ── What You Get ── */}
-      <section className="mx-auto max-w-4xl px-6 py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-6"
-        >
-          {[
-            {
-              label: 'AI News',
-              desc: 'The biggest stories of the week, explained without the hype.',
-            },
-            {
-              label: 'Free Tools',
-              desc: 'Guides, templates, and AI tools I build and give away.',
-            },
-            {
-              label: 'Founder Lessons',
-              desc: 'Real lessons from building GRRO, SHEATH, and what comes next.',
-            },
-          ].map((item, i) => (
-            <motion.div
-              key={item.label}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="rounded-2xl border border-border bg-card-bg p-6 transition-colors hover:border-accent/30"
-            >
-              <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-                {item.label}
-              </p>
-              <p className="text-[15px] text-muted leading-relaxed">
-                {item.desc}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
-      </section>
-
-      {/* ── Divider ── */}
-      <div className="mx-auto max-w-4xl px-6">
-        <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-      </div>
-
       {/* ── Archive ── */}
       <section className="mx-auto max-w-4xl px-6 py-20">
         <motion.div
