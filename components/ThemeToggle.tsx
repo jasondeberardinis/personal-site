@@ -24,13 +24,13 @@ export function ThemeToggle() {
   return (
     <motion.button
       onClick={toggle}
-      className="fixed right-5 top-5 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card-bg/80 backdrop-blur-sm transition-all hover:border-accent hover:text-accent"
+      className="fixed right-5 top-5 z-50 flex h-9 w-9 items-center justify-center rounded-full border border-stone-200 bg-white/80 backdrop-blur-sm transition-colors dark:border-stone-700 dark:bg-stone-800/80"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       {dark ? (
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-amber-400">
           <circle cx="12" cy="12" r="5" />
           <line x1="12" y1="1" x2="12" y2="3" />
           <line x1="12" y1="21" x2="12" y2="23" />
@@ -42,7 +42,7 @@ export function ThemeToggle() {
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
         </svg>
       ) : (
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-muted">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-stone-600">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
       )}
