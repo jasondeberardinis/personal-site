@@ -26,6 +26,7 @@ const currentProjects = [
 const socials = [
   { label: 'Instagram', url: 'https://instagram.com/jasonndeb' },
   { label: 'LinkedIn', url: 'https://linkedin.com/in/jasondeberardinis' },
+  { label: 'Email', url: 'mailto:hello@jasondeberardinis.com' },
 ]
 
 export default function HomePage() {
