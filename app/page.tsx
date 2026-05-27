@@ -7,18 +7,18 @@ import { PixelWaves } from '@/components/PixelWaves'
 
 const currentProjects = [
   {
+    name: 'SHEATH',
+    description: 'Premium knife rolls for chefs',
+    url: 'https://sheathmade.com',
+    display: 'sheathmade.com',
+    logo: 'https://www.google.com/s2/favicons?domain=sheathmade.com&sz=32',
+  },
+  {
     name: 'GRRO',
     description: 'Get recommended by AI',
     url: 'https://grro.io',
     display: 'grro.io',
     logo: '/grro-logo.svg',
-  },
-{
-    name: 'SHEATH',
-    description: 'Premium knife rolls for chefs',
-    url: 'https://sheath.store',
-    display: 'sheath.store',
-    logo: 'https://www.google.com/s2/favicons?domain=sheath.store&sz=32',
   },
 ]
 
